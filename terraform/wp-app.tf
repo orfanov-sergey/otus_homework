@@ -23,7 +23,7 @@ resource "yandex_compute_instance" "wp-app" {
   }
 
   metadata = {
-    ssh-keys = "ubuntu:${file("~/.ssh/id_rsa.pub")}"
+    ssh-keys = "ubuntu:${file(var.path_to_ssh_pub_key)}"
   }
 
   provisioner "remote-exec" {
@@ -36,7 +36,7 @@ resource "yandex_compute_instance" "wp-app" {
           host = "${self.network_interface.0.nat_ip_address}"
           type = "ssh"
           user = var.username
-          private_key = "${file(var.path_to_ssh_key)}"
+          private_key = "${file(var.path_to_ssh_priv_key)}"
       }
   }
 }

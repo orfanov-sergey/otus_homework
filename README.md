@@ -1,4 +1,4 @@
-# Запуск манифеста
+## Запуск манифеста
 
  - для запуска нужно добавить файл ./terraform/wp.auto.tfvars
    с примерным содержимым:
@@ -9,10 +9,12 @@
         db_password = "database password"
         yc_key_file = "path to yandex service account key file"
         
+        //пользователь и ключ для подключения к 3-м ВМ
         username = "virtual machine user name"    
+        path_to_ssh_pub_key = "~/.ssh/id_rsa.pub"
 
         //это для подключения к виртуальной машине
-        path_to_ssh_key = "path to private ssh key file"
+        path_to_ssh_priv_key = "~/.ssh/id_rsa"
         
         // Описание для запуска нескольких экземпляров приложения
         // a, b, c необходимо для обозначения регионов yandex_cloud
@@ -21,4 +23,4 @@
             2:"b"
             3:"c"
         }
- - если всё верно terraform запустит в ЯО три сети, три виртуальные машины, кластер PostgresSQL из 3-х нод и балансировщик нагрузки для приложения.
+ - если всё верно terraform запустит в ЯО три подсети, три виртуальные машины, кластер PostgresSQL из 3-х нод и балансировщик нагрузки для приложения, а так же предустановку для проверки резульиата.

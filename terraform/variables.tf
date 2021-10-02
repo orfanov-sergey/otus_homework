@@ -36,7 +36,12 @@ variable "username" {
     description = "System username"
 }
 
-variable "path_to_ssh_key" {
+variable "path_to_ssh_pub_key" {
+  type = string
+  description = "Path to public key file"
+}
+
+variable "path_to_ssh_priv_key" {
     type = string
     description = "Path to private key file"
 }
