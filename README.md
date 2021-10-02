@@ -1,6 +1,7 @@
 # Запуск манифеста
 
  - для запуска нужно добавить файл ./terraform/wp.auto.tfvars
+   с примерным содержимым:
 
         yc_cloud    = "yandex cloud id"
         yc_folder   = "yandex folder id"
@@ -9,7 +10,7 @@
         yc_key_file = "path to yandex service account key file"
         
         username = "virtual machine user name"    
-            
+
         //это для подключения к виртуальной машине
         path_to_ssh_key = "path to private ssh key file"
         
