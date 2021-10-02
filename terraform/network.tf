@@ -3,7 +3,7 @@ resource "yandex_vpc_network" "wp-network" {
 }
 
 resource "yandex_vpc_subnet" "wp-subnet" {
-  for_each = var.instance_count
+  for_each = var.instances
 
   name           = "wp-subnet-${each.key}"
   v4_cidr_blocks = ["10.${each.key}.0.0/24"]

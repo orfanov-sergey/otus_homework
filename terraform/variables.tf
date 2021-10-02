@@ -27,7 +27,7 @@ variable "db_password" {
   description = "PostgreSQL pasword"
 }
 
-variable "instance_count" {
+variable "instances" {
   type = map
 }
 

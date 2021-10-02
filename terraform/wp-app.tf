@@ -1,8 +1,8 @@
 
 resource "yandex_compute_instance" "wp-app" {
 
-  for_each = var.instance_count
-
+  for_each = var.instances
+  
   name = "wp-app-${each.key}"
   zone = "ru-central1-${each.value}"
 
