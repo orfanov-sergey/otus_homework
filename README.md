@@ -5,12 +5,12 @@
 
         yc_cloud    = "yandex cloud id"
         yc_folder   = "yandex folder id"
-        db_user = "database user name"
+        db_user     = "database user name"
         db_password = "database password"
         yc_key_file = "path to yandex service account key file"
         
         //пользователь и ключ для подключения к 3-м ВМ
-        username = "virtual machine user name"    
+        username            = "virtual machine user name"    
         path_to_ssh_pub_key = "~/.ssh/id_rsa.pub"
 
         //это для подключения к виртуальной машине в секции provisioner
