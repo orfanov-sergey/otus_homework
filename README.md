@@ -13,7 +13,7 @@
         username = "virtual machine user name"    
         path_to_ssh_pub_key = "~/.ssh/id_rsa.pub"
 
-        //это для подключения к виртуальной машине
+        //это для подключения к виртуальной машине в секции provisioner
         path_to_ssh_priv_key = "~/.ssh/id_rsa"
         
         // Описание для запуска нескольких экземпляров приложения
