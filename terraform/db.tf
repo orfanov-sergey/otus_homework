@@ -36,9 +36,9 @@ resource "yandex_mdb_postgresql_cluster" "wp_postgresql" {
   dynamic "host" {
     for_each = var.instances
     content {
-        zone             = "ru-central1-${host.value}"
-        subnet_id        = yandex_vpc_subnet.wp-subnet[host.key].id
-        assign_public_ip = true
+      zone             = "ru-central1-${host.value}"
+      subnet_id        = yandex_vpc_subnet.wp-subnet[host.key].id
+      assign_public_ip = true
     }
- }
+  }
 }

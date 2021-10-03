@@ -5,7 +5,7 @@ resource "yandex_lb_target_group" "wp_tg" {
 
   dynamic "target" {
     for_each = yandex_compute_instance.wp-app
- 
+
     content {
       subnet_id = yandex_vpc_subnet.wp-subnet[target.key].id
       address   = target.value.network_interface.0.ip_address

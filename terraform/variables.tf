@@ -20,7 +20,7 @@ variable "yc_token" {
 }
 
 variable "db_user" {
-    description = "Postgresql username"
+  description = "Postgresql username"
 }
 
 variable "db_password" {
@@ -28,20 +28,20 @@ variable "db_password" {
 }
 
 variable "instances" {
-  type = map
+  type = map(any)
 }
 
 variable "username" {
-    type = string
-    description = "System username"
+  type        = string
+  description = "System username"
 }
 
 variable "path_to_ssh_pub_key" {
-  type = string
+  type        = string
   description = "Path to public key file"
 }
 
 variable "path_to_ssh_priv_key" {
-    type = string
-    description = "Path to private key file"
+  type        = string
+  description = "Path to private key file"
 }
