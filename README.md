@@ -23,8 +23,9 @@
             2:"b"
             3:"c"
         }
- - далее запускаем
+ - далее находясь в дериктории ./terraform запускаем
         
+        terraform init
         terraform apply --auto-approve
 
 
