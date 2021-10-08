@@ -3,12 +3,11 @@
  - для запуска нужно добавить файл ./terraform/wp.auto.tfvars
    со следующим содержимым:
 
-        yc_cloud    = "yandex cloud id"yc_cloud    = "b1gugb59tc67i4b1ts0i"
-yc_folder   = "b1gh1ek1ipmvpts3us6l"
-yc_token    = "AQAAAAAElPZrAATuwWbdADblZUiKl1G0DD0iKxs"
-db_user     = "user"
-db_password = "pa$$w0rd"
-yc_key_file = "../key.json"
+        yc_cloud    = "yandex cloud id"
+        yc_folder   = "folder_id"
+        db_user     = "user"
+        db_password = "pa$$w0rd"
+        yc_key_file = "path to yandex service accoun key file"
 
 username             = "ubuntu"
 path_to_ssh_pub_key  = "~/.ssh/id_rsa.pub"
