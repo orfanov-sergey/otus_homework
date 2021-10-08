@@ -1,9 +1,30 @@
+### Загрузка репозитория и подготовка
+
+ - git
+       git clone https://github.com/orfanov-sergey/otus_homework.git
+       mv key.json otus_homework/key.json
+
 ### Запуск манифеста
 
  - для запуска нужно добавить файл ./terraform/wp.auto.tfvars
    со следующим содержимым:
 
-        yc_cloud    = "yandex cloud id"
+        yc_cloud    = "yandex cloud id"yc_cloud    = "b1gugb59tc67i4b1ts0i"
+yc_folder   = "b1gh1ek1ipmvpts3us6l"
+yc_token    = "AQAAAAAElPZrAATuwWbdADblZUiKl1G0DD0iKxs"
+db_user     = "user"
+db_password = "pa$$w0rd"
+yc_key_file = "../key.json"
+
+username             = "ubuntu"
+path_to_ssh_pub_key  = "~/.ssh/id_rsa.pub"
+path_to_ssh_priv_key = "~/.ssh/id_rsa"
+
+instances = {
+  1 : "a"
+  2 : "b"
+  3 : "c"
+}
         yc_folder   = "yandex folder id"
         db_user     = "database user name"
         db_password = "database password"
@@ -23,7 +44,7 @@
             2:"b"
             3:"c"
         }
- - далее находясь в директории ./terraform запускаем
+ - далее создав и перейдя/находясь в директории ./terraform запускаем
         
         terraform init
         terraform apply --auto-approve
