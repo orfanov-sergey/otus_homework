@@ -1,9 +1,3 @@
-### Загрузка репозитория и подготовка
-
- - git
-       git clone https://github.com/orfanov-sergey/otus_homework.git
-       mv key.json otus_homework/key.json
-
 ### Запуск манифеста
 
  - для запуска нужно добавить файл ./terraform/wp.auto.tfvars
