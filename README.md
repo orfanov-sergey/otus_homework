@@ -9,9 +9,9 @@
         db_password = "pa$$w0rd"
         yc_key_file = "path to yandex service accoun key file"
 
-username             = "ubuntu"
-path_to_ssh_pub_key  = "~/.ssh/id_rsa.pub"
-path_to_ssh_priv_key = "~/.ssh/id_rsa"
+        username             = "ubuntu"
+        path_to_ssh_pub_key  = "~/.ssh/id_rsa.pub"
+        path_to_ssh_priv_key = "~/.ssh/id_rsa"
 
 instances = {
   1 : "a"
